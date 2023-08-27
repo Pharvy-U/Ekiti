@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Land Use Receipt</title>
+    <link th:href = "@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <p id="payer-name" th:text = "${detail.payerName}"></p>
+        <p id="payer-id" th:text = "${detail.payerId}"></p>
+        <p id="contact-address" th:text = "${detail.contactAddress}"></p>
+        <p id="property-address" th:text = "${detail.propertyAddress}"></p>
+        <p id="property-classification" th:text = "${detail.propertyClassification}"></p>
+        <p id="accessed-value" th:text = "${detail.accessedValue}"></p>
+        <p id="charge-rate" th:text = "${detail.chargeRate}"></p>
+        <p id="luc-amount" th:text = "${detail.lucAmount}"></p>
+        <p id="luc-amount-2" th:text = "${detail.lucAmount}"></p>
+        <p id="luc-amount-3" th:text = "${detail.lucAmount}"></p>
+        <p id="amount-previously-owed" th:text = "${detail.amountPreviouslyOwed}"></p>
+        <p id="total-amount-payable" th:text = "${detail.lucAmount + detail.amountPreviouslyOwed}"></p>
+        <p id="notice-number" th:text = "${detail.noticeNumber}"></p>
+        <p id="notice-number-2" th:text = "${detail.noticeNumber}"></p>
+        <p id="bank-payment-code" th:text = "${detail.bankPaymentCode}"></p>
+<!--        <p id="notice-date" th:text = "${detail.noticeDate}"></p>-->
+        <p id="print-date" th:text = "${detail.printDate}"></p>
+
+        <p id="payer-name-2" th:text = "${detail.payerName}"></p>
+        <p id="payer-id-2" th:text = "${detail.payerId}"></p>
+        <p id="contact-address-2" th:text = "${detail.contactAddress}"></p>
+        <p id="notice-number-3" th:text = "${detail.noticeNumber}"></p>
+        <p id="bank-payment-code-2" th:text = "${detail.bankPaymentCode}"></p>
+    </div>
+    <button onclick="printFunction()">Print</button>
+    <script>
+    function printFunction() {
+      window.print();
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  postgres_db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=ifeanyi
+      - POSTGRES_DB=invoice
+
+  myapp:
+    depends_on:
+      - postgres_db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stsl-ekiti:1.0
+    ports:
+      - 8080:8080

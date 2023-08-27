@@ -1,0 +1,302 @@
+#container {
+    -webkit-print-color-adjust: exact;
+    background-image: url("../img/E-GOV-LUC-RECEIPT.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 40%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    }
+
+p {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: black;
+    }
+
+#payer-name {
+  position: absolute;
+  top: 21%;
+  left: 8%;
+}
+
+#payer-id {
+  position: absolute;
+  top: 43%;
+  left: 82%;
+}
+
+#contact-address {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
+#property-address {
+  position: absolute;
+  top: 18%;
+  left: 58%;
+}
+
+#property-classification {
+  position: absolute;
+  top: 21%;
+  left: 79%;
+}
+
+#accessed-value {
+  position: absolute;
+  top: 32%;
+  left: 42%;
+}
+
+#charge-rate {
+  position: absolute;
+  top: 32%;
+  left: 59%;
+}
+
+#luc-amount {
+  position: absolute;
+  top: 32%;
+  left: 69%;
+}
+
+#luc-amount-2 {
+  position: absolute;
+  top: 46%;
+  left: 64%;
+}
+
+#luc-amount-3 {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+}
+
+#amount-previously-owed {
+  position: absolute;
+  top: 42%;
+  left: 44%;
+}
+
+#total-amount-payable {
+  position: absolute;
+  top: 46%;
+  left: 44%;
+}
+
+#notice-number {
+  position: absolute;
+  top: 19%;
+  left: 8%;
+}
+
+#notice-number-2 {
+  position: absolute;
+  top: 24%;
+  left: 44%;
+}
+
+#bank-payment-code {
+  position: absolute;
+  top: 31%;
+  left: 82%;
+}
+
+#notice-date {
+  position: absolute;
+  top: 62%;
+  left: 36%;
+}
+
+#print-date {
+  position: absolute;
+  top: 18%;
+  left: 44%;
+}
+
+#payer-name-2 {
+  position: absolute;
+  top: 78%;
+  left: 44%;
+}
+
+#payer-id-2 {
+  position: absolute;
+  top: 82%;
+  left: 44%;
+}
+
+#contact-address-2 {
+  position: absolute;
+  top: 85.5%;
+  left: 44%;
+}
+
+#notice-number-3 {
+  position: absolute;
+  top: 89.5%;
+  left: 44%;
+}
+
+#bank-payment-code-2 {
+  position: absolute;
+  top: 93.2%;
+  left: 44%;
+}
+
+@media
+print{
+#container {
+    -webkit-print-color-adjust: exact;
+    background-image: url("../img/E-GOV-LUC-RECEIPT.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    }
+
+p {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: black;
+    }
+
+#payer-name {
+  position: absolute;
+  top: 21%;
+  left: 8%;
+}
+
+#payer-id {
+  position: absolute;
+  top: 43%;
+  left: 82%;
+}
+
+#contact-address {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
+#property-address {
+  position: absolute;
+  top: 18%;
+  left: 58%;
+}
+
+#property-classification {
+  position: absolute;
+  top: 21%;
+  left: 82%;
+}
+
+#accessed-value {
+  position: absolute;
+  top: 32%;
+  left: 42%;
+}
+
+#charge-rate {
+  position: absolute;
+  top: 32%;
+  left: 59%;
+}
+
+#luc-amount {
+  position: absolute;
+  top: 32%;
+  left: 69%;
+}
+
+#luc-amount-2 {
+  position: absolute;
+  top: 46%;
+  left: 64%;
+}
+
+#luc-amount-3 {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+}
+
+#amount-previously-owed {
+  position: absolute;
+  top: 42%;
+  left: 44%;
+}
+
+#total-amount-payable {
+  position: absolute;
+  top: 46%;
+  left: 44%;
+}
+
+#notice-number {
+  position: absolute;
+  top: 19%;
+  left: 8%;
+}
+
+#notice-number-2 {
+  position: absolute;
+  top: 24%;
+  left: 44%;
+}
+
+#bank-payment-code {
+  position: absolute;
+  top: 31%;
+  left: 82%;
+}
+
+#notice-date {
+  position: absolute;
+  top: 62%;
+  left: 36%;
+}
+
+#print-date {
+  position: absolute;
+  top: 18%;
+  left: 44%;
+}
+
+#payer-name-2 {
+  position: absolute;
+  top: 79%;
+  left: 44%;
+}
+
+#payer-id-2 {
+  position: absolute;
+  top: 83%;
+  left: 44%;
+}
+
+#contact-address-2 {
+  position: absolute;
+  top: 86%;
+  left: 44%;
+}
+
+#notice-number-3 {
+  position: absolute;
+  top: 90%;
+  left: 44%;
+}
+
+#bank-payment-code-2 {
+  position: absolute;
+  top: 94%;
+  left: 44%;
+}
+}
