@@ -16,4 +16,4 @@ services:
       dockerfile: Dockerfile
     image: stsl-ekiti:1.0
     ports:
-      - 8080:8080
+      - 80:8080
