@@ -8,7 +8,6 @@ WORKDIR /home/app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 RUN chmod a+x ./mvnw
-RUN mvn clean install
 RUN ./mvnw dependency:resolve
 
 COPY src ./src
