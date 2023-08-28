@@ -39,6 +39,12 @@ public class Receipt {
     @JsonProperty("propertyAddress")
     private String propertyAddress;
 
+    @JsonProperty("LGA")
+    private String LGA;
+
+    @JsonProperty("status")
+    private String status;
+
     @JsonProperty("propertyClassification")
     private String propertyClassification;
 
