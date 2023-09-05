@@ -11,7 +11,6 @@ import stslekiti.receipt.service.ReceiptService;
 
 import java.util.List;
 
-@CrossOrigin
 @Controller
 @RequestMapping("/api/")
 public class ReceiptController {
@@ -23,6 +22,7 @@ public class ReceiptController {
     }
 
 
+    @CrossOrigin
     @GetMapping("invoice/print/{id}")
     public String printInvoice(@PathVariable Long id, Model model) {
 
@@ -31,6 +31,7 @@ public class ReceiptController {
         return "receipt";
     }
 
+    @CrossOrigin
     @GetMapping(value="invoice/fetch/{id}")
     public @ResponseBody GenericResponseDTO fetchInvoice(@PathVariable Long id) {
 
@@ -38,6 +39,7 @@ public class ReceiptController {
         return new GenericResponseDTO("00", "Successfully fetched Invoice", receipt);
     }
 
+    @CrossOrigin
     @GetMapping("invoice/fetch/all")
     public @ResponseBody GenericResponseDTO fetchAllInvoices(Model model) {
         return receiptService.handleFetchAllInvoicesRequest();
