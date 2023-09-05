@@ -54,14 +54,14 @@ public class ReceiptApplication implements CommandLineRunner {
 		Receipt person5 = Receipt.builder().accessedValue(BigInteger.valueOf(12340000)).amountPreviouslyOwed(BigInteger.valueOf(750))
 				.bankPaymentCode(BigInteger.valueOf(123456789)).chargeRate(0.0394).contactAddress("5, Adeniyi Jones")
 				.lucAmount(BigInteger.valueOf(5735)).noticeNumber(BigInteger.valueOf(1212121212)).noticeDate(LocalDate.now()).printDate(LocalDate.now())
-				.payerId("5-PS").payerName("Bisola Afolabi").propertyAddress("1 Oniru Estate, Victoria Island").propertyClassification("Commercial")
+				.payerId("5-PS").payerName("Daniel Opara").propertyAddress("1 Oniru Estate, Victoria Island").propertyClassification("Commercial")
 				.LGA("Shongunle").status("Pending").build();
 		receiptRepository.save(person5);
 
 		Receipt person6 = Receipt.builder().accessedValue(BigInteger.valueOf(12340000)).amountPreviouslyOwed(BigInteger.valueOf(750))
 				.bankPaymentCode(BigInteger.valueOf(123456789)).chargeRate(0.0394).contactAddress("3, Ogun Street")
 				.lucAmount(BigInteger.valueOf(5735)).noticeNumber(BigInteger.valueOf(1212121212)).noticeDate(LocalDate.now()).printDate(LocalDate.now())
-				.payerId("4-PS").payerName("Bisola Afolabi").propertyAddress("1 Oniru Estate, Victoria Island").propertyClassification("Commercial")
+				.payerId("4-PS").payerName("Peter Ewuzie").propertyAddress("1 Oniru Estate, Victoria Island").propertyClassification("Commercial")
 				.LGA("Ikeja").status("Paid").build();
 		receiptRepository.save(person6);
 
