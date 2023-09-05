@@ -11,6 +11,7 @@ import stslekiti.receipt.service.ReceiptService;
 
 import java.util.List;
 
+@CrossOrigin
 @Controller
 @RequestMapping("/api/")
 public class ReceiptController {

@@ -1,7 +1,7 @@
-package stslekiti.receipt.security;
+//package stslekiti.receipt.security;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 //import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -12,16 +12,16 @@ import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 //import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 //import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+//import org.springframework.web.cors.CorsConfiguration;
+//import org.springframework.web.cors.CorsConfigurationSource;
+//import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import java.util.Arrays;
-import java.util.Collections;
+//import java.util.Arrays;
+//import java.util.Collections;
 
-@Configuration
-//@EnableWebSecurity
-public class SecurityConfiguration {
+//@Configuration
+////@EnableWebSecurity
+//public class SecurityConfiguration {
 
 //    @Override
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -52,17 +52,17 @@ public class SecurityConfiguration {
 //        return http.build();
 //    }
 
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        final var configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Collections.singletonList("*"));
-        configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH"));
-        configuration.setAllowCredentials(false);
-        configuration.setExposedHeaders(Arrays.asList("Authorization", "fileName", "Refresh-Authorization-Token"));
-        configuration.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type",
-                "Access-Control-Allow-Origin", "origin", "accept", "Referer", "X-requested-with", "Refresh-Authorization-Token"));
-        final var source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
-    }
-}
+//    @Bean
+//    public CorsConfigurationSource corsConfigurationSource() {
+//        final var configuration = new CorsConfiguration();
+//        configuration.setAllowedOrigins(Collections.singletonList("*"));
+//        configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH"));
+//        configuration.setAllowCredentials(false);
+//        configuration.setExposedHeaders(Arrays.asList("Authorization", "fileName", "Refresh-Authorization-Token"));
+//        configuration.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type",
+//                "Access-Control-Allow-Origin", "origin", "accept", "Referer", "X-requested-with", "Refresh-Authorization-Token"));
+//        final var source = new UrlBasedCorsConfigurationSource();
+//        source.registerCorsConfiguration("/**", configuration);
+//        return source;
+//    }
+//}
