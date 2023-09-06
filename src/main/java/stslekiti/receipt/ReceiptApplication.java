@@ -25,7 +25,7 @@ public class ReceiptApplication implements CommandLineRunner {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://192.168.19.30:9943/");
+				registry.addMapping("/**").allowedOrigins("*");
 			}
 		};
 	}
