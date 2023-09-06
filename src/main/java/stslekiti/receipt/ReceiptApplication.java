@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import stslekiti.receipt.entity.Receipt;
 import stslekiti.receipt.repository.ReceiptRepository;
 
@@ -15,6 +18,16 @@ public class ReceiptApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ReceiptApplication.class, args);
+	}
+
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedOrigins("http://192.168.19.30:9943/");
+			}
+		};
 	}
 
 	@Autowired
