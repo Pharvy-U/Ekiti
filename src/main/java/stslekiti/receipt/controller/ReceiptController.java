@@ -1,15 +1,13 @@
 package stslekiti.receipt.controller;
 
 
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import stslekiti.receipt.entity.Receipt;
-import stslekiti.receipt.payload.GenericResponseDTO;
+import stslekiti.receipt.payload.request.AddPropertyRequest;
+import stslekiti.receipt.payload.response.GenericResponseDTO;
 import stslekiti.receipt.service.ReceiptService;
-
-import java.util.List;
 
 @Controller
 @RequestMapping("/api/")
@@ -32,7 +30,7 @@ public class ReceiptController {
     }
 
     @CrossOrigin
-    @GetMapping(value="invoice/fetch/{id}")
+    @GetMapping(value="invoice/fetch/pp/{id}")
     public @ResponseBody GenericResponseDTO fetchInvoice(@PathVariable Long id) {
 
         Receipt receipt = receiptService.handleFetchInvoiceRequest(id);
@@ -40,13 +38,13 @@ public class ReceiptController {
     }
 
     @CrossOrigin
-    @GetMapping("invoice/fetch/all")
+    @GetMapping("invoice/fetch/pp/all")
     public @ResponseBody GenericResponseDTO fetchAllInvoices(Model model) {
         return receiptService.handleFetchAllInvoicesRequest();
     }
 
-    @PostMapping()
-    public GenericResponseDTO populateDB() {
-        return receiptService.handlePopulateDB();
-    }
+//    @PostMapping()
+//    public @ResponseBody GenericResponseDTO addProperty(@RequestBody AddPropertyRequest addPropertyRequest) {
+//        return receiptService.handleAddProperty(addPropertyRequest);
+//    }
 }

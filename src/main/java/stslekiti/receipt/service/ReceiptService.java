@@ -1,7 +1,8 @@
 package stslekiti.receipt.service;
 
 import stslekiti.receipt.entity.Receipt;
-import stslekiti.receipt.payload.GenericResponseDTO;
+import stslekiti.receipt.payload.request.AddPropertyRequest;
+import stslekiti.receipt.payload.response.GenericResponseDTO;
 
 
 public interface ReceiptService {
@@ -9,5 +10,5 @@ public interface ReceiptService {
 
     public Receipt handleFetchInvoiceRequest(Long id);
 
-    public GenericResponseDTO handlePopulateDB();
+//    public GenericResponseDTO handleAddProperty(AddPropertyRequest addPropertyRequest);
 }

@@ -1,4 +1,4 @@
-package stslekiti.receipt.payload;
+package stslekiti.receipt.payload.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.http.HttpStatus;
