@@ -15,7 +15,7 @@ public class ReceiptApplication implements CommandLineRunner {
 		SpringApplication.run(ReceiptApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 //	public WebMvcConfigurer corsConfigurer() {
 //		return new WebMvcConfigurer() {
 //			@Override
@@ -25,7 +25,7 @@ public class ReceiptApplication implements CommandLineRunner {
 //		};
 //	}
 
-	@Autowired
+//	@Autowired
 //	ReceiptRepository receiptRepository;
 
 	@Override
