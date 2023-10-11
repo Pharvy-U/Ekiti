@@ -30,7 +30,7 @@ public class InvoicePayloadBuilder {
         List<InvoiceResponse> invoices = new ArrayList<>();
 
         landOwner.getProperties().forEach(property -> {
-            InvoiceResponse.builder().payerName(landOwner.getLastName() + landOwner.getFirstName())
+            InvoiceResponse invoice = InvoiceResponse.builder().payerName(landOwner.getLastName() + landOwner.getFirstName())
                     .payerId(landOwner.getId().toString()).contactAddress(landOwner.getAddress())
                     .noticeNumber(new BigInteger(landOwner.getPhone())).LGA(property.getLGA())
                     .propertyAddress(property.getAddress()).propertyClassification(property.getStructure())
@@ -38,6 +38,7 @@ public class InvoicePayloadBuilder {
                     .accessedValue(new BigInteger("1100100")).amountPreviouslyOwed(new BigInteger("10"))
                     .lucAmount(new BigInteger("100")).chargeRate(5.0).noticeDate(LocalDate.now())
                     .printDate(LocalDate.now()).build();
+            invoices.add(invoice);
         });
 
         return invoices;

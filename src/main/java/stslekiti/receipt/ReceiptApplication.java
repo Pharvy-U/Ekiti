@@ -7,11 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import stslekiti.receipt.entity.Receipt;
-import stslekiti.receipt.repository.ReceiptRepository;
-
-import java.math.BigInteger;
-import java.time.LocalDate;
 
 @SpringBootApplication
 public class ReceiptApplication implements CommandLineRunner {
@@ -21,17 +16,17 @@ public class ReceiptApplication implements CommandLineRunner {
 	}
 
 	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("*");
-			}
-		};
-	}
+//	public WebMvcConfigurer corsConfigurer() {
+//		return new WebMvcConfigurer() {
+//			@Override
+//			public void addCorsMappings(CorsRegistry registry) {
+//				registry.addMapping("/**").allowedOrigins("*");
+//			}
+//		};
+//	}
 
 	@Autowired
-	ReceiptRepository receiptRepository;
+//	ReceiptRepository receiptRepository;
 
 	@Override
 	public void run(String... args) throws Exception {

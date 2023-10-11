@@ -1,7 +1,17 @@
 package stslekiti.receipt.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Entity
 @Table(name = "property_table")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Property {
 
     @Id
@@ -27,71 +37,8 @@ public class Property {
     @Column(name = "gps_coordinates")
     private String gpsCoordinates;
 
-    @ManyToOne(targetEntity = LandLord.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "owner_id")
-    private LandLord landLord;
+//    @ManyToOne(targetEntity = LandLord.class, fetch = FetchType.LAZY)
+//    @JoinColumn(name = "owner_id")
+//    private LandLord landLord;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getStructure() {
-        return structure;
-    }
-
-    public void setStructure(String structure) {
-        this.structure = structure;
-    }
-
-    public String getPropertyUse() {
-        return propertyUse;
-    }
-
-    public void setPropertyUse(String propertyUse) {
-        this.propertyUse = propertyUse;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getLGA() {
-        return LGA;
-    }
-
-    public void setLGA(String LGA) {
-        this.LGA = LGA;
-    }
-
-    public String getLandSize() {
-        return landSize;
-    }
-
-    public void setLandSize(String landSize) {
-        this.landSize = landSize;
-    }
-
-    public String getGpsCoordinates() {
-        return gpsCoordinates;
-    }
-
-    public void setGpsCoordinates(String gpsCoordinates) {
-        this.gpsCoordinates = gpsCoordinates;
-    }
-
-    public LandLord getLandLord() {
-        return landLord;
-    }
-
-    public void setLandLord(LandLord landLord) {
-        this.landLord = landLord;
-    }
 }
